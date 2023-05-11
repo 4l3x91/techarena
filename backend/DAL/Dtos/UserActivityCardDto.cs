@@ -1,3 +1,5 @@
+using DAL.Entities;
+
 namespace DAL.Dtos;
 
 public class UserActivityCardDto
