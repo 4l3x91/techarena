@@ -14,12 +14,12 @@ public class InterestController : ControllerBase
         _context = context;
     }
     [HttpGet]
-    [Route("[GetMyInterests]")]
+    [Route("GetMyInterests")]
     public async Task<ActionResult<List<Interest>>> GetMyInterests(Guid userId)
     {
         var myInterests = new List<Interest>();
         var myUserInterests = await _context.UserInterests.Where(x => x.UserId == userId).ToListAsync();
-        foreach(var item in myUserInterests)
+        foreach (var item in myUserInterests)
         {
             myInterests.Add(await _context.Interests.Where(x => x.Id == item.InterestId).FirstOrDefaultAsync());
         }
@@ -28,8 +28,9 @@ public class InterestController : ControllerBase
     }
 
     [HttpGet]
-    [Route("[GetAllInterests]")]
-    public async Task<ActionResult<List<Interest>>> GetAllInterests(){
+    [Route("GetAllInterests")]
+    public async Task<ActionResult<List<Interest>>> GetAllInterests()
+    {
         return await _context.Interests.ToListAsync();
     }
 }
