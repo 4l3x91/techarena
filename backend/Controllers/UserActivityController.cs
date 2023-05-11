@@ -26,13 +26,13 @@ public class UserActivityController : ControllerBase
 
         foreach (var userAcitivty in myUserInterests)
         {
-            matchingUserInterests.AddRange(await _context.UserInterests.Where(x => x.ActivityId == userAcitivty.ActivityId && userId != x.UserId).ToListAsync());
+            matchingUserInterests.AddRange(await _context.UserInterests.Where(x => x.InterestId == userAcitivty.InterestId && userId != x.UserId).ToListAsync());
         }
 
         foreach (var match in matchingUserInterests)
         {
             var user = await _context.Users.Where(x => x.Id == match.UserId).FirstOrDefaultAsync();
-            var activity = await _context.Activities.Where(x => x.Id == match.ActivityId).FirstOrDefaultAsync();
+            var interest = await _context.Interests.Where(x => x.Id == match.InterestId).FirstOrDefaultAsync();
             var level = await _context.Levels.Where(x => x.Id == match.LevelId).FirstOrDefaultAsync();
 
 
@@ -40,7 +40,7 @@ public class UserActivityController : ControllerBase
                 new UserInterestCardDto
                 {
                     Username = user.Name,
-                    ActivityName = activity.Name,
+                    InterestName = interest.Name,
                     ProfilePictureURL = user.ProfilePictureURL,
                     Gender = user.Gender,
                     Level = level.Name,
@@ -59,12 +59,12 @@ public class UserActivityController : ControllerBase
         var matchingUserInterests = new List<UserInterest>();
         var userInterestsCardDtos = new List<UserInterestCardDto>();
 
-        matchingUserInterests.AddRange(await _context.UserInterests.Where(x => x.ActivityId == activityId && x.UserId == userId).ToListAsync());
+        matchingUserInterests.AddRange(await _context.UserInterests.Where(x => x.InterestId == activityId && x.UserId == userId).ToListAsync());
 
         foreach (var match in matchingUserInterests)
         {
             var user = await _context.Users.Where(x => x.Id == match.UserId).FirstOrDefaultAsync();
-            var activity = await _context.Activities.Where(x => x.Id == match.ActivityId).FirstOrDefaultAsync();
+            var interest = await _context.Interests.Where(x => x.Id == match.InterestId).FirstOrDefaultAsync();
             var level = await _context.Levels.Where(x => x.Id == match.LevelId).FirstOrDefaultAsync();
 
 
@@ -72,7 +72,7 @@ public class UserActivityController : ControllerBase
             new UserInterestCardDto
             {
                 Username = user.Name,
-                ActivityName = activity.Name,
+                InterestName = interest.Name,
                 ProfilePictureURL = user.ProfilePictureURL,
                 Gender = user.Gender,
                 Level = level.Name,

@@ -1,6 +1,6 @@
 namespace DAL.Entities;
 
-public class Activity : BaseEntity
+public class Interest : BaseEntity
 {
     public string Name { get; set; } = String.Empty;
 

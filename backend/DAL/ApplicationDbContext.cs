@@ -11,8 +11,9 @@ public class ApplicationDbContext : DbContext
     public DbSet<User> Users { get; set; }
     public DbSet<UserInterest> UserInterests { get; set; }
     public DbSet<Level> Levels { get; set; }
-    public DbSet<Activity> Activities { get; set; }
+    public DbSet<Interest> Interests { get; set; }
     public DbSet<Event> Events { get; set; }
+    public DbSet<UserEvent> UserEvents { get; set; }
     public DbSet<Request> Requests { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
