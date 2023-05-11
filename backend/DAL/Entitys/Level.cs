@@ -3,4 +3,6 @@ namespace DAL.Entities;
 public class Level : BaseEntity
 {
     public string Name { get; set; } = String.Empty;
+
+    public virtual ICollection<UserActivity> UserActivities { get; set; }
 }
