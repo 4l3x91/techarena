@@ -1,6 +1,6 @@
 namespace DAL.Entities;
 
-public class UserActivity : BaseEntity
+public class UserInterest : BaseEntity
 {
     public Guid UserId { get; set; }
     public Guid ActivityId { get; set; }

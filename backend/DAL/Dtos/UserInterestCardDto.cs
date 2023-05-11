@@ -1,6 +1,8 @@
+using DAL.Entities;
+
 namespace DAL.Dtos;
 
-public class UserActivityCardDto
+public class UserInterestCardDto
 {
     public string Username { get; set; } = string.Empty;
     public string ActivityName { get; set; } = string.Empty;
