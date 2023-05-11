@@ -95,7 +95,7 @@ public class ApplicationDbContextSeed
     private static List<Location> GetLocations()
     {
         var locations = new List<Location>();
-        string filePath = "../location/badhus_simhallar.json";
+        string filePath = "../backend/location/badhus_simhallar.json";
 
         // Read the JSON file into a string
         string json = File.ReadAllText(filePath);
@@ -106,14 +106,18 @@ public class ApplicationDbContextSeed
         // Loop through the features and map them to Location objects
         foreach (var feature in data.features)
         {
-            Location location = new Location
+            if (feature.properties.name != null)
             {
-                Longitude = feature.geometry.coordinates[0],
-                Latitude = feature.geometry.coordinates[1],
-                LocationName = feature.properties.name
-            };
-
+                Location location = new Location
+                {
+                    Longitude = feature.geometry.coordinates[0],
+                    Latitude = feature.geometry.coordinates[1],
+                    LocationName = feature.properties.name
+                };
             locations.Add(location);
+            }
+
+            
             // Do something with the location object
         }
 
