@@ -13,12 +13,12 @@ public class ApplicationDbContext : DbContext
     public DbSet<Level> Levels { get; set; }
     public DbSet<Activity> Activities { get; set; }
 
-    // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    // {
-    //     optionsBuilder.UseSqlite(azureConnectionString); //When using Azure Db version
-    //     //optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=HouseholdDb;Trusted_Connection=True;"); //When using local Db version
-    //     //optionsBuilder.UseInMemoryDatabase("inMemory"); //When using inMemory
-    // }
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        // optionsBuilder.UseSqlServer(azureConnectionString); //When using Azure Db version
+        //optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=HouseholdDb;Trusted_Connection=True;"); //When using local Db version
+        //optionsBuilder.UseInMemoryDatabase("inMemory"); //When using inMemory
+    }
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
