@@ -13,7 +13,8 @@ public class InterestController : ControllerBase
     {
         _context = context;
     }
-
+    [HttpGet]
+    [Route("[GetMyInterests]")]
     public async Task<ActionResult<List<Interest>>> GetMyInterests(Guid userId)
     {
         var myInterests = new List<Interest>();
@@ -26,6 +27,8 @@ public class InterestController : ControllerBase
         return Ok(myInterests);
     }
 
+    [HttpGet]
+    [Route("[GetAllInterests]")]
     public async Task<ActionResult<List<Interest>>> GetAllInterests(){
         return await _context.Interests.ToListAsync();
     }
