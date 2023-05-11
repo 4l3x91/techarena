@@ -1,0 +1,916 @@
+{
+	"type" : "FeatureCollection",
+	"name" : "badhus_simhallar",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9433822446, 57.7404466321 ]
+			},
+			"properties" : {
+				"place_id" : "1",
+				"name" : "Alidebergsbadet",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/simhallarochbadplatser/simhallar/alidebergsbadettemputomhusbad.4.3cc917c815870110c12a29da.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 13.0950515942, 57.7159440016 ]
+			},
+			"properties" : {
+				"place_id" : "2",
+				"name" : "Dalsjöbadet",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/simhallarochbadplatser/simhallar/dalsjobadet.4.3cc917c815870110c12a2a00.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.7911630142, 57.7120845033 ]
+			},
+			"properties" : {
+				"place_id" : "3",
+				"name" : "Sandaredsbadet",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/simhallarochbadplatser/simhallar/sandaredsbadet.4.3cc917c815870110c12a29e3.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9394972269, 57.7180717135 ]
+			},
+			"properties" : {
+				"place_id" : "4",
+				"name" : "Stadsparksbadet",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/simhallarochbadplatser/simhallar/stadsparksbadet.4.3cc917c815870110c12a29c6.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9271279879, 57.7246069896 ]
+			},
+			"properties" : {
+				"place_id" : "5",
+				"name" : "Almåshallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar/inomhus.4.3cc917c815870110c12a20e4.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9938706149, 57.8220972347 ]
+			},
+			"properties" : {
+				"place_id" : "6",
+				"name" : "Asklandahallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar/inomhus.4.3cc917c815870110c12a20e4.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9836918689, 57.7300759774 ]
+			},
+			"properties" : {
+				"place_id" : "7",
+				"name" : "Bodahallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar/inomhus.4.3cc917c815870110c12a20e4.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9286600254, 57.7168470301 ]
+			},
+			"properties" : {
+				"place_id" : "8",
+				"name" : "Boråshallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar/inomhus.4.3cc917c815870110c12a20e4.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9086306568, 57.7011045445 ]
+			},
+			"properties" : {
+				"place_id" : "9",
+				"name" : "Borås ridhus",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar/inomhus.4.3cc917c815870110c12a20e4.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9320826556, 57.7350809008 ]
+			},
+			"properties" : {
+				"place_id" : "10",
+				"name" : "Borås Tennis- och Boulecenter",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar/inomhus.4.3cc917c815870110c12a20e4.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.929420715, 57.7335514827 ]
+			},
+			"properties" : {
+				"place_id" : "11",
+				"name" : "Curlinghallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar/inomhus.4.3cc917c815870110c12a20e4.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 13.0952830794, 57.7162500263 ]
+			},
+			"properties" : {
+				"place_id" : "12",
+				"name" : "Dalsjöhallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar/inomhus.4.3cc917c815870110c12a20e4.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9459200209, 57.7117338314 ]
+			},
+			"properties" : {
+				"place_id" : "13",
+				"name" : "Daltorpshallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar/inomhus.4.3cc917c815870110c12a20e4.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9318900193, 57.7366603459 ]
+			},
+			"properties" : {
+				"place_id" : "14",
+				"name" : "Erikslundshallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar/inomhus.4.3cc917c815870110c12a20e4.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 13.0121349951, 57.8179128058 ]
+			},
+			"properties" : {
+				"place_id" : "15",
+				"name" : "Fristadhallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar/inomhus.4.3cc917c815870110c12a20e4.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.8962205333, 57.725226645 ]
+			},
+			"properties" : {
+				"place_id" : "16",
+				"name" : "Hestrahallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar/inomhus.4.3cc917c815870110c12a20e4.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9320364186, 57.735888806 ]
+			},
+			"properties" : {
+				"place_id" : "17",
+				"name" : "Gymnastikens hus",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar/inomhus.4.3cc917c815870110c12a20e4.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9301200686, 57.7339137921 ]
+			},
+			"properties" : {
+				"place_id" : "18",
+				"name" : "Ishallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar/inomhus.4.3cc917c815870110c12a20e4.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9274372562, 57.7326536089 ]
+			},
+			"properties" : {
+				"place_id" : "19",
+				"name" : "Lundbyhallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar/inomhus.4.3cc917c815870110c12a20e4.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9350173349, 57.7363600658 ]
+			},
+			"properties" : {
+				"place_id" : "20",
+				"name" : "Ryahallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar/inomhus.4.3cc917c815870110c12a20e4.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.7913571266, 57.7124537356 ]
+			},
+			"properties" : {
+				"place_id" : "21",
+				"name" : "Sandaredshallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar/inomhus.4.3cc917c815870110c12a20e4.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9270076516, 57.7322206726 ]
+			},
+			"properties" : {
+				"place_id" : "22",
+				"name" : "Skateboard- och BMXfreeridehall",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar/inomhus.4.3cc917c815870110c12a20e4.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.8605524457, 57.6340568064 ]
+			},
+			"properties" : {
+				"place_id" : "23",
+				"name" : "Viskaforshallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar/inomhus.4.3cc917c815870110c12a20e4.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 13.1193928083, 57.7882906638 ]
+			},
+			"properties" : {
+				"place_id" : "24",
+				"name" : "Rångedalahallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.rangedalahallen.se"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 13.032397386, 57.8786858502 ]
+			},
+			"properties" : {
+				"place_id" : "25",
+				"name" : "Borgstena Allhall",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.borgstena.weebly.com"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9476245538, 57.7198852728 ]
+			},
+			"properties" : {
+				"place_id" : "26",
+				"name" : "Sturehallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.missionskyrkan.se/Hemsidor-Forsamlingar/boras/Sida-3/Sturehallen/"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9581909795, 57.7258570766 ]
+			},
+			"properties" : {
+				"place_id" : "27",
+				"name" : "Björkängshallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar/inomhus.4.3cc917c815870110c12a20e4.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9155192924, 57.7128452531 ]
+			},
+			"properties" : {
+				"place_id" : "28",
+				"name" : "I 15s idrottshall",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www1.idrottonline.se/I15IF"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.958575115, 57.7271068035 ]
+			},
+			"properties" : {
+				"place_id" : "29",
+				"name" : "Björkängsvallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar.4.461763c21582ce0434baf42.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9836496124, 57.7259723994 ]
+			},
+			"properties" : {
+				"place_id" : "30",
+				"name" : "Bodavallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar.4.461763c21582ce0434baf42.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9347284918, 57.7344282866 ]
+			},
+			"properties" : {
+				"place_id" : "31",
+				"name" : "Borås Arena",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar.4.461763c21582ce0434baf42.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9912228698, 57.7316687954 ]
+			},
+			"properties" : {
+				"place_id" : "32",
+				"name" : "Brämhults IP",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar.4.461763c21582ce0434baf42.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9006875951, 57.7240446658 ]
+			},
+			"properties" : {
+				"place_id" : "33",
+				"name" : "Byttorps IP",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar.4.461763c21582ce0434baf42.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 13.0965094817, 57.7161102763 ]
+			},
+			"properties" : {
+				"place_id" : "34",
+				"name" : "Dalsjöfors IP",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar.4.461763c21582ce0434baf42.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9319499862, 57.7114115414 ]
+			},
+			"properties" : {
+				"place_id" : "35",
+				"name" : "Götavallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar.4.461763c21582ce0434baf42.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 13.0043485544, 57.8286572527 ]
+			},
+			"properties" : {
+				"place_id" : "36",
+				"name" : "Hedens IP",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.laget.se/FRISTAD_GOIF"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9795696278, 57.7073780992 ]
+			},
+			"properties" : {
+				"place_id" : "37",
+				"name" : "Kransmossens IP",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar.4.461763c21582ce0434baf42.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9314064335, 57.6968540244 ]
+			},
+			"properties" : {
+				"place_id" : "38",
+				"name" : "Kronängs IP",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar.4.461763c21582ce0434baf42.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9300950692, 57.7258953991 ]
+			},
+			"properties" : {
+				"place_id" : "39",
+				"name" : "Kronängsparken",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar.4.461763c21582ce0434baf42.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9331185285, 57.7525676843 ]
+			},
+			"properties" : {
+				"place_id" : "40",
+				"name" : "Parker-vallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar.4.461763c21582ce0434baf42.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9191240006, 57.7224245408 ]
+			},
+			"properties" : {
+				"place_id" : "41",
+				"name" : "Ramnavallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar.4.461763c21582ce0434baf42.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9349285127, 57.7355964525 ]
+			},
+			"properties" : {
+				"place_id" : "42",
+				"name" : "Ryavallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar.4.461763c21582ce0434baf42.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9322047938, 57.7444286104 ]
+			},
+			"properties" : {
+				"place_id" : "43",
+				"name" : "Ryda Sportfält",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar.4.461763c21582ce0434baf42.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9473637484, 57.7336938841 ]
+			},
+			"properties" : {
+				"place_id" : "44",
+				"name" : "Sagavallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar.4.461763c21582ce0434baf42.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.7885932343, 57.7190738404 ]
+			},
+			"properties" : {
+				"place_id" : "45",
+				"name" : "Sandevi",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.sandaredsif.se/"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9378565488, 57.7546270244 ]
+			},
+			"properties" : {
+				"place_id" : "46",
+				"name" : "Sjöbovallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.boras.se/upplevaochgora/idrottsanlaggningar.4.461763c21582ce0434baf42.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.7946929404, 57.6038235563 ]
+			},
+			"properties" : {
+				"place_id" : "47",
+				"name" : "Svanehovs IP",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.hitta.se/svanehov+ip+%28fotbollsplan%29/svaneholm/zzTPjjw"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.8584559113, 57.6371260613 ]
+			},
+			"properties" : {
+				"place_id" : "48",
+				"name" : "Sven Eriksson-vallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.hitta.se/sven+eriksonsvallen+%28fotbollsplan%29/viskafors/0zgj225"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 13.0675448572, 57.6475226777 ]
+			},
+			"properties" : {
+				"place_id" : "49",
+				"name" : "Aplareds IF (Ekbacken)",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www1.idrottonline.se/AplaredsIF-Fotboll/"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 13.2265059635, 57.685516332 ]
+			},
+			"properties" : {
+				"place_id" : "50",
+				"name" : "Dannehov",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.laget.se/DANNIKEIK/"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 13.0239628983, 57.6901963241 ]
+			},
+			"properties" : {
+				"place_id" : "51",
+				"name" : "Engvallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www1.idrottonline.se/GanghesterSK/"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 13.118569747, 57.7866271032 ]
+			},
+			"properties" : {
+				"place_id" : "52",
+				"name" : "Furuvi",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.laget.se/rangedalaik"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 13.099090455, 57.7300358471 ]
+			},
+			"properties" : {
+				"place_id" : "53",
+				"name" : "Gårdavallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.dgoif.org/"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.8901760088, 57.801178139 ]
+			},
+			"properties" : {
+				"place_id" : "54",
+				"name" : "Hagavallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www1.idrottonline.se/BredaredsIF/"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.7503209726, 57.8137983427 ]
+			},
+			"properties" : {
+				"place_id" : "55",
+				"name" : "Hedbyvallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.laget.se/hedaredsbk/"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 13.185988664, 57.7511300488 ]
+			},
+			"properties" : {
+				"place_id" : "56",
+				"name" : "Lundavallen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.asperedsif.se/"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 13.059110001, 57.6898656874 ]
+			},
+			"properties" : {
+				"place_id" : "57",
+				"name" : "Målevi",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "https://www.facebook.com/Malsrydsif"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 13.0211559785, 57.8837259412 ]
+			},
+			"properties" : {
+				"place_id" : "58",
+				"name" : "Nosseborg",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www1.idrottonline.se/BorgstenaIF/"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.8431205322, 57.7195659407 ]
+			},
+			"properties" : {
+				"place_id" : "59",
+				"name" : "Sjömarkens idrottsplats",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.laget.se/sjomarkensif"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 13.0142557469, 57.802845419 ]
+			},
+			"properties" : {
+				"place_id" : "60",
+				"name" : "Trollevi",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.sparsorsaik.nu/?firstRef"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.8215931167, 57.7624982665 ]
+			},
+			"properties" : {
+				"place_id" : "61",
+				"name" : "Tåängen",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www1.idrottonline.se/SandhultsSK-Fotboll/"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.94604072, 57.8509261097 ]
+			},
+			"properties" : {
+				"place_id" : "62",
+				"name" : "Vängahov",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www1.idrottonline.se/VangaBK-Fotboll/"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.7493005809, 57.5889437132 ]
+			},
+			"properties" : {
+				"place_id" : "63",
+				"name" : "Viskadalens folkhögskola, fotbollsplan",
+				"updated" : "2020-11-16",
+				"description" : "",
+				"visit_url" : "http://www.viskadalen.nu/kursgarden.asp?MenuOrder=3"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 13.0024306276, 57.7406114872 ]
+			},
+			"properties" : {
+				"place_id" : "64",
+				"name" : null,
+				"updated" : "2020-11-16",
+				"description" : null,
+				"visit_url" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9429656081, 57.7391518228 ]
+			},
+			"properties" : {
+				"place_id" : "65",
+				"name" : "Borås Simarena",
+				"updated" : "2022-08-22",
+				"description" : "",
+				"visit_url" : "https://www.boras.se/upplevaochgora/simhallarochbadplatser/simhallar/borassimarena.4.3cc917c815870110c12a29d1.html"
+			}
+		}
+	]
+}

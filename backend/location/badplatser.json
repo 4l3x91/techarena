@@ -1,0 +1,448 @@
+{
+	"type" : "FeatureCollection",
+	"name" : "badplatser",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9396439434, 57.7617761262 ]
+			},
+			"properties" : {
+				"place_id" : "1490-493",
+				"name" : "Almenäs badplats",
+				"hov_ref" : "SE0A21490000003594",
+				"updated" : "2022-05-23",
+				"description" : "Almenäs Kommunala badplats är en mycket uppskattad och välbesökt badplats. Badplatsen ligger vid Öresjös södra strand, knappt fem kilometer från Borås innerstad. Badplatsen har både stora grönytor, sandstränder samt en stor brygga och en specialbyggd tillgänglighetsanpassad ramp ner i vattnet.",
+				"extra_url" : "https://badplatsen.havochvatten.se/badplatsen/karta/#/bath/SE0A21490000003594",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/almenas.4.793892fe158af8a7e702383a.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.998521979, 57.813119853 ]
+			},
+			"properties" : {
+				"place_id" : "1490-494",
+				"name" : "Asklanda badplats",
+				"hov_ref" : "SE0A21490000001801",
+				"updated" : "2022-05-23",
+				"description" : "Asklanda kommunala badplats ligger vid Öresjös norra strand i de västra delarna av Fristad samhälle. Här finns en sandstrand samt några mindre gräsytor inne i den strandnära tallskogen.\nHär finns också en nyuppförd beachvolleybollplan samt ett klätternät. Nere vid stranden finns två grillplatser.",
+				"extra_url" : "https://badplatsen.havochvatten.se/badplatsen/karta/#/bath/SE0A21490000001801",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/asklanda.4.793892fe158af8a7e7023a20.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 13.1177930388, 57.7169224561 ]
+			},
+			"properties" : {
+				"place_id" : "1490-498",
+				"name" : "Dalsjön badplats",
+				"hov_ref" : "SE0A21490000001803",
+				"updated" : "2022-05-23",
+				"description" : "Dalsjöns kommunala badplats ligger i Dalsjöns norra ände, i de östra delarna av Dalsjöfors samhälle. Här finns en liten sandstrand, en brygga samt en stor gräsyta.\nFör de yngre finns ett klätternät och en mycket uppskattad fågelbogunga.",
+				"extra_url" : "https://badplatsen.havochvatten.se/badplatsen/karta/#/bath/SE0A21490000001803",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/dalsjon.4.793892fe158af8a7e7023f34.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.8598850973, 57.6491491713 ]
+			},
+			"properties" : {
+				"place_id" : "1490-500",
+				"name" : "Furusjön badplats",
+				"hov_ref" : "SE0A21490000004510",
+				"updated" : "2022-05-23",
+				"description" : "Badplatsen ligger vid Furusjön strax väster om Rydboholm. Här finns en mindre sandstrand. Hundar är tillåtna på badplatsen!\nFurusjön är en liten skogssjö med en liten sandstrand, och därtill en av Borås stads två kommunala hundbadplatser.",
+				"extra_url" : "https://badplatsen.havochvatten.se/badplatsen/karta/#/bath/SE0A21490000004510",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/furusjon.4.793892fe158af8a7e70264fe.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 13.1317464598, 57.8183251857 ]
+			},
+			"properties" : {
+				"place_id" : "1490-503",
+				"name" : "Marsjön badplats",
+				"hov_ref" : "SE0A21490000001799",
+				"updated" : "2022-05-23",
+				"description" : "Marsjöns kommunala badplats ligger vid Östra Marsjöns östra strand, mellan samhällena Rångedala och Varnum. Här finns en liten sandstrand, en brygga samt en stor gräsyta.\nBadplatsen har en grillplats. För de yngre finns några gungor.",
+				"extra_url" : "https://badplatsen.havochvatten.se/badplatsen/karta/#/bath/SE0A21490000001799",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/marsjon.4.793892fe158af8a7e702753e.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.7944686077, 57.7051588419 ]
+			},
+			"properties" : {
+				"place_id" : "1490-505",
+				"name" : "Rydet badplats",
+				"hov_ref" : "SE0A21490000004855",
+				"updated" : "2022-05-23",
+				"description" : "Rydet badplats ligger vid Viaredssjön i östra delarna av Sandared. Här finns en stor sandstrand.",
+				"extra_url" : "https://badplatsen.havochvatten.se/badplatsen/karta/#/bath/SE0A21490000004855",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/rydet.4.793892fe158af8a7e702773b.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9450756407, 57.7603342813 ]
+			},
+			"properties" : {
+				"place_id" : "1490-507",
+				"name" : "Sjöbo badplats",
+				"hov_ref" : "SE0A21490000003596",
+				"updated" : "2022-05-23",
+				"description" : "Sjöbo kommunala badplats är ligger vid Öresjös sydöstra strand. Här finns stora gräsytor samt en liten sandstrand. Sjöbo badplats är en av Borås Stads två officiella hundbadplatser, här är alltså hundar välkomna att bada hela året om!",
+				"extra_url" : "https://badplatsen.havochvatten.se/badplatsen/karta/#/bath/SE0A21490000003596",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/sjobo.4.793892fe158af8a7e7027771.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.8355777668, 57.7117757737 ]
+			},
+			"properties" : {
+				"place_id" : "1490-508",
+				"name" : "Sjömarken badplats",
+				"hov_ref" : "SE0A21490000003593",
+				"updated" : "2022-05-23",
+				"description" : "Sjömarkens kommunala badplats är en mycket populär badplats och naturområde vid Viaredssjön. Här finns en stor sandstrand och några mindre, en stor gräsyta samt en lång brygga. Här finns två lekplatser, en vid parkeringen och en vid sandstranden. Vid badbryggan finns ett stort klätternät.\nLängs stranden finns tre grillplatser. Vid parkeringen ligger en grusfotbollsplan och en boulebana.",
+				"extra_url" : "https://badplatsen.havochvatten.se/badplatsen/karta/#/bath/SE0A21490000003593",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/sjomarken.4.793892fe158af8a7e7027a5a.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9504194382, 57.8376625909 ]
+			},
+			"properties" : {
+				"place_id" : "1490-511",
+				"name" : "Solviken badplats",
+				"hov_ref" : "SE0A21490000005495",
+				"updated" : "2022-05-23",
+				"description" : "Solviken badplats ligger vid Equmeniakyrkan Fristad sommargård vid östra stranden av sjön Ärtingen, \nknappt 4 km väster om Fristads samhälle.\n\nHär finns en liten sandstrand, brygga samt stora grönytor. Ute i sjön finns en flotte.\n\nSolviken ägs och drivs av Equmeniakyrkan i Fristad.\n\nOmklädningsbyggnad finns.\n\nFör de yngre finns några gungor. \nVid badplatsen finns en grillplats samt flera bord och bänkar.",
+				"extra_url" : "https://badplatsen.havochvatten.se/badplatsen/karta/#/bath/SE0A21490000005495",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/solvikenequmeniakyrkanifristad.4.793892fe158af8a7e702b870.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9754179066, 57.5849001433 ]
+			},
+			"properties" : {
+				"place_id" : "1490-513",
+				"name" : "Stora Ekenäset badplats",
+				"updated" : "2022-05-23",
+				"description" : "Stora Ekenäsets naturistbad ligger på en ö i Frisjön cirka 1,5 mil söder om Borås.\n\nOm du kontaktar Västergötlands Naturistförening, 0703-543093, innan ditt besök, kan du få hjälp med att ta dig ut till ön med båt från Arnäsholm.\n\nStora Ekenäset ägs och drivs av Västergötlands Naturistförening.",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/storaekenasetvastergotlandsnaturistforening.4.793892fe158af8a7e702ba23.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 13.2178477845, 57.7576778269 ]
+			},
+			"properties" : {
+				"place_id" : "1490-517",
+				"name" : "Tolken badplats",
+				"hov_ref" : "SE0A21490000001800",
+				"updated" : "2022-05-23",
+				"description" : "Tolkens kommunala badplats ligger vid västra stranden av sjön Tolken, några kilometer öster om Äspereds samhälle. I sluttningen ned mot sjön Tolken finns en brygga och en gräsyta.\n\nOmklädningsbyggnad finns.\nVid badplatsen finns en grillplats. För de yngre finns några gungor.",
+				"extra_url" : "https://badplatsen.havochvatten.se/badplatsen/karta/#/bath/SE0A21490000001800",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/tolken.4.793892fe158af8a7e702bdde.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.8961574918, 57.9011439367 ]
+			},
+			"properties" : {
+				"place_id" : "1490-520",
+				"name" : "Tämta badplats",
+				"hov_ref" : "SE0A21490000001796",
+				"updated" : "2022-05-23",
+				"description" : "Tämta badplats är en mycket populär badplats på nordöstra sidan av sjön Säven. Här finns en mycket lång sandstrand. Ute i sjön finns en flotte. Badplatsen är mycket långgrund. Badplatsen kallas allmänt för \"Tämta beach\"!\nLängs stranden finns tre grillplatser och några bord och bänkar.",
+				"extra_url" : "https://badplatsen.havochvatten.se/badplatsen/karta/#/bath/SE0A21490000001796",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/tamta.4.793892fe158af8a7e702c023.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.6604928858, 57.568818604 ]
+			},
+			"properties" : {
+				"place_id" : "1490-496",
+				"name" : "Buastrand badplats",
+				"hov_ref" : "SE0A21490000001810",
+				"updated" : "2021-04-22",
+				"description" : null,
+				"extra_url" : "https://badplatsen.havochvatten.se/badplatsen/karta/#/bath/SE0A21490000001810",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/buastrand.4.793892fe158af8a7e7023c00.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.7976580154, 57.6053330387 ]
+			},
+			"properties" : {
+				"place_id" : "1490-495",
+				"name" : "Bogryd badplats",
+				"hov_ref" : "SE0A21490000001809",
+				"updated" : "2022-05-23",
+				"description" : "Bogryds kommunala badplats ligger strax sydost om Bogryds samhälle. Här finns en liten sandstrand, stora gräsytor och en brygga.\nVid badplatsen finns även en grillplats. För de riktigt små finns både gungor och sandlåda.",
+				"extra_url" : "https://badplatsen.havochvatten.se/badplatsen/karta/#/bath/SE0A21490000001809",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/bogryd.4.793892fe158af8a7e7023a3f.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9734471909, 57.775518737 ]
+			},
+			"properties" : {
+				"place_id" : "1490-499",
+				"name" : "Frufällan badplats",
+				"hov_ref" : "SE0A21490000003595",
+				"updated" : "2022-05-23",
+				"description" : "Frufällans kommunala badplats är en liten badplats mitt inne i tätorten Frufällan. Badplatsen ligger vid Öresjös östra strand. Här finns en brygga samt en mindre gräsyta och en liten sandstrand. Nere vid sjökanten finns en grillplats.",
+				"extra_url" : "https://badplatsen.havochvatten.se/badplatsen/karta/#/bath/SE0A21490000003595",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/frufallan.4.793892fe158af8a7e7023fdb.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 13.2909761264, 57.6311694902 ]
+			},
+			"properties" : {
+				"place_id" : "1490-501",
+				"name" : "Hofsnäs badplats",
+				"updated" : "2022-05-23",
+				"description" : "Vid Hofsnäs herrgård vid Torpasjöns östra sida finns en badplats med strand, brygga och mycket stora gräsytor. Strax söder om badplatsen finns två grillplatser samt ett vindskydd. Bredvid parkeringen finns en mindre fotbollsplan.",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/hofsnas.4.793892fe158af8a7e7026635.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9585278047, 57.7415098218 ]
+			},
+			"properties" : {
+				"place_id" : "1490-502",
+				"name" : "Kypesjön badplats",
+				"hov_ref" : "SE0A21490000001802",
+				"updated" : "2022-05-23",
+				"description" : "Kypesjöns kommunala badplats ligger strax intill Kypegårdens friluftsgård. Här finns en sandstrand, en stor brygga och en tillgänglighetsanpassad badramp. I sluttningen ned mot badplatsen är det stora gräsytor.",
+				"extra_url" : "https://badplatsen.havochvatten.se/badplatsen/karta/#/bath/SE0A21490000001802",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/kypesjon.4.793892fe158af8a7e7026bd4.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 13.2201727288, 57.6915594087 ]
+			},
+			"properties" : {
+				"place_id" : "1490-504",
+				"name" : "Rammsjön badplats",
+				"hov_ref" : "SE0A21490000001806",
+				"updated" : "2022-05-23",
+				"description" : "Rammsjöns kommunala badplats ligger vid Rammsjöns västra strand, strax intill Dannikes samhälle. Här finns en liten sandstrand, två bryggor, hopptorn samt stora gräsytor. Omklädningsbyggnad finns.\nVid badplatsen finns också en grillplats. För de yngre finns några gungor.",
+				"extra_url" : "https://badplatsen.havochvatten.se/badplatsen/karta/#/bath/SE0A21490000001806",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/rammsjon.4.793892fe158af8a7e7027557.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.7850824494, 57.7064925036 ]
+			},
+			"properties" : {
+				"place_id" : "1490-506",
+				"name" : "Sandared badplats",
+				"hov_ref" : "SE0A21490000001779",
+				"updated" : "2022-05-23",
+				"description" : "Sandareds kommunala badplats är en mycket populär badplats vid Viaredssjön. Här finns en stor sandstrand och en brygga med hopptorn. För de yngre finns ett klätternät.\nVid badplatsen finns också en grillplats samt några bänkar.",
+				"extra_url" : "https://badplatsen.havochvatten.se/badplatsen/karta/#/bath/SE0A21490000001779",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/sandared.4.793892fe158af8a7e702775b.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 13.0061402986, 57.8096362221 ]
+			},
+			"properties" : {
+				"place_id" : "1490-509",
+				"name" : "Skalle badplats",
+				"hov_ref" : "SE0A21490000001798",
+				"updated" : "2022-05-23",
+				"description" : "Skalle kommunala badplats och naturområde ligger vid Öresjös östra strand, precis söder om Fristad samhälle. Här finns en lång och fin sandstrand, en brygga och några mindre gräsytor inne i den strandnära tallskogen. På höjden ovanför badplatsen finns ett klätternät och nere vid stranden finns två grillplatser.",
+				"extra_url" : "https://badplatsen.havochvatten.se/badplatsen/karta/#/bath/SE0A21490000001798",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/skalle.4.793892fe158af8a7e7027a83.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9039895398, 57.7222594558 ]
+			},
+			"properties" : {
+				"place_id" : "1490-497",
+				"name" : "Byttorp Kolbränningen badplats",
+				"hov_ref" : "SE0A21490000001787",
+				"updated" : "2022-05-23",
+				"description" : "Byttorps kommunala badplats ligger på södra sidan av sjön Kolbränningen. Här finns en liten gräsmatta, en liten sandstrand samt en brygga.\nIntill badplatsen finns en grillplats samt några bänkar.",
+				"extra_url" : "https://badplatsen.havochvatten.se/badplatsen/karta/#/bath/SE0A21490000001787",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/byttorpkolbranningen.4.793892fe158af8a7e7023d82.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 13.224415494, 57.7577096659 ]
+			},
+			"properties" : {
+				"place_id" : "1490-515",
+				"name" : "Sundholmen badplats",
+				"updated" : "2021-04-22",
+				"description" : null,
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/tolken.4.793892fe158af8a7e702bdde.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 13.0553564797, 57.6623035189 ]
+			},
+			"properties" : {
+				"place_id" : "1490-510",
+				"name" : "Skansasjön badplats",
+				"hov_ref" : "SE0A21490000001805",
+				"updated" : "2022-05-23",
+				"description" : "Skansasjöns kommunala badplats ligger på Skansasjöns östra sida, cirka 1,5 kilometer nordväst om Aplared. \nI sluttningen ned mot sjön finns en brygga och en liten gräsyta.",
+				"extra_url" : "https://badplatsen.havochvatten.se/badplatsen/karta/#/bath/SE0A21490000001805",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/skansasjon.4.793892fe158af8a7e7027c18.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 13.0066619612, 57.8009976838 ]
+			},
+			"properties" : {
+				"place_id" : "1490-512",
+				"name" : "Sparsör badplats",
+				"hov_ref" : "SE0A21490000003597",
+				"updated" : "2022-05-23",
+				"description" : "Sparsörs kommunala badplats ligger vid Öresjös östra strand, mitt inne i Sparsörs samhälle. Här finns en lång brygga, en liten sandstrand och en stor gräsyta i sluttningen ned mot sjön. För de yngsta barnen finns några gungor. Här finns också en grillplats.",
+				"extra_url" : "https://badplatsen.havochvatten.se/badplatsen/karta/#/bath/SE0A21490000003597",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/sparsor.4.793892fe158af8a7e702b87a.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.8441496286, 57.6459374802 ]
+			},
+			"properties" : {
+				"place_id" : "1490-514",
+				"name" : "Storsjön badplats",
+				"hov_ref" : "SE0A21490000004361",
+				"updated" : "2022-05-23",
+				"description" : "Storsjöns kommunala badplats ligger i nordöstra ändan av Storsjön, strax väster om Viskafors. Här finns en sandstrand och mycket stora gräsytor och en brygga. I området finns flera grillplatser samt ett vindskydd. För de yngre finns ett klätternät och en mycket uppskattad fågelbogunga.",
+				"extra_url" : "https://badplatsen.havochvatten.se/badplatsen/karta/#/bath/SE0A21490000004361",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/storsjon.4.793892fe158af8a7e702ba35.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9465469125, 57.686037634 ]
+			},
+			"properties" : {
+				"place_id" : "1490-518",
+				"name" : "Transås badplats",
+				"hov_ref" : "SE0A21490000001807",
+				"updated" : "2022-05-23",
+				"description" : "Transås badplats är ligger på den sydöstra sidan av Stora Transåssjön. Här finns en liten sandstrand, en stor gräsyta samt en brygga. \nOmklädningshytt finns.",
+				"extra_url" : "https://badplatsen.havochvatten.se/badplatsen/karta/#/bath/SE0A21490000001807",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/transas.4.793892fe158af8a7e702bdf1.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.7966105492, 57.7823942663 ]
+			},
+			"properties" : {
+				"place_id" : "1490-519",
+				"name" : "Trummesjön badplats",
+				"hov_ref" : "SE0A21490000005979",
+				"updated" : "2022-05-23",
+				"description" : "Trummesjöns badplats ligger drygt 2,5 kilometer norr om Sandhult. Här finns en liten sandstrand och en brygga.\nVid badplatsen finns också en grillplats och en beachvolleybollplan.\n\nTrummesjöns badplats ägs och drivs av Sandhults byalag.",
+				"extra_url" : "https://badplatsen.havochvatten.se/badplatsen/karta/#/bath/SE0A21490000005979",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/trummesjonsandhultsbyalag.4.793892fe158af8a7e702be7f.html"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.783025509, 57.8172974481 ]
+			},
+			"properties" : {
+				"place_id" : "1490-521",
+				"name" : "Östra Valsjön badplats",
+				"hov_ref" : "SE0A21490000001781",
+				"updated" : "2022-05-23",
+				"description" : "Östra Valsjöns badplats ligger cirka 2 kilometer öster om Hedared. Här finns en stor gräsyta, en liten sandstrand och en brygga.\nVid stranden finns en grillplats samt några bord och bänkar.",
+				"extra_url" : "https://badplatsen.havochvatten.se/badplatsen/karta/#/bath/SE0A21490000001781",
+				"visit_url" : "https://www.boras.se/upplevaochgora/friluftslivochnatur/badplatser/ostravalsjon.4.793892fe158af8a7e702c03c.html"
+			}
+		}
+	]
+}

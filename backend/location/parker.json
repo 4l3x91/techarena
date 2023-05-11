@@ -1,0 +1,146 @@
+{
+	"type" : "FeatureCollection",
+	"name" : "parker",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.941129732, 57.7177556824 ]
+			},
+			"properties" : {
+				"namn" : "Anna Lindhs park"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9495384719, 57.7176129296 ]
+			},
+			"properties" : {
+				"namn" : "Annelundsparken"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9380872636, 57.7126870128 ]
+			},
+			"properties" : {
+				"namn" : "Druvkilen"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9693126824, 57.7285350145 ]
+			},
+			"properties" : {
+				"namn" : "Fjärdingsparken"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9339439598, 57.7212435557 ]
+			},
+			"properties" : {
+				"namn" : "Lottas Plan"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9499871663, 57.7245377166 ]
+			},
+			"properties" : {
+				"namn" : "Kvarnbergsparken"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9465769214, 57.7269561795 ]
+			},
+			"properties" : {
+				"namn" : "Linnéparken"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9213565049, 57.7118753839 ]
+			},
+			"properties" : {
+				"namn" : "Majorslunden"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9373174285, 57.7233776425 ]
+			},
+			"properties" : {
+				"namn" : "Nybroparken"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9201195294, 57.7210373491 ]
+			},
+			"properties" : {
+				"namn" : "Ramnaparken"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9253775912, 57.7238627785 ]
+			},
+			"properties" : {
+				"namn" : "Sinnenas park"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9389329761, 57.7187516226 ]
+			},
+			"properties" : {
+				"namn" : "Stadsparken"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9380445654, 57.7132771963 ]
+			},
+			"properties" : {
+				"namn" : "Alelyckan"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 12.9560797895, 57.7228265851 ]
+			},
+			"properties" : {
+				"namn" : "Patronen"
+			}
+		}
+	]
+}
