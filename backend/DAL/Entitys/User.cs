@@ -9,6 +9,7 @@ public class User : BaseEntity
     public string Gender { get; set; } = String.Empty;
     public List<UserInterest> UserInterests { get; set; } = new();
     public string About { get; set; } = String.Empty;
+    public Guid AuthUserId { get; set; }
 
     public virtual ICollection<UserEvent> UserEvents { get; set; }
 

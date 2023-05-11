@@ -17,7 +17,7 @@ public class EventController : ControllerBase
     }
 
     [HttpGet]
-    [Route("GetEventByInterestId/{interestId}")]
+    [Route("GetEventByInterestId/{interestId:Guid}")]
     public async Task<ActionResult<List<Event>>> GetEventByInterestId(Guid interestId)
     {
         var events = await _context.Events.Where(x => x.UserInterestId == interestId).ToListAsync();
@@ -33,7 +33,7 @@ public class EventController : ControllerBase
     // }
 
     [HttpGet]
-    [Route("GetEventsByUserId/{userId}")]
+    [Route("GetEventsByUserId/{userId:Guid}")]
     public async Task<ActionResult<List<Event>>> GetEventsByUserId(Guid userId)
     {
         var user = await _context.Users.Where(u => u.Id == userId).FirstOrDefaultAsync();
