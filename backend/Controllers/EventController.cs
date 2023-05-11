@@ -28,7 +28,21 @@ public class EventController : ControllerBase
     [Route("GetEventsByUserId/{userId}")]
     public async Task<ActionResult<List<Event>>> GetEventsByUserId(Guid userId)
     {
-        var events = await _context.Events.Where(x => x.UserInterest.UserId == userId).ToListAsync();
+        //var events = await _context.Events.Where(x => x.UserInterest.UserId == userId).ToListAsync();
+        //var test = await _context.Events.Include(n => n.UserInterestId).ToListAsync();
+        //
+        var user = await _context.Users.Where(u => u.Id == userId).FirstOrDefaultAsync();
+        var userEvents = await _context.UserEvents.Where(ue => ue.UserId == userId).ToListAsync();
+        List<Event> events = new List<Event>();
+        foreach (var userEvent in userEvents)
+        {
+            Event e = await _context.Events.Where(e => e.Id == userId).FirstOrDefaultAsync();
+            events.Add(e);
+        }
+
+
+
+
         return Ok(events);
     }
 }
