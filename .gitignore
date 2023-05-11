@@ -1,3 +1,8 @@
+*.db
+Migrations/
+*.db-wal
+*.db-shm
+
 # Logs
 logs
 *.log
@@ -14,7 +19,7 @@ dist-ssr
 
 bin/
 obj/
-*.db
+Migrations/
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

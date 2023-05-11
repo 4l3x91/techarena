@@ -4,7 +4,12 @@ using Newtonsoft.Json;
 
 public class ApplicationDbContextSeed
 {
-   
+    private readonly HttpClient httpClient;
+
+    public ApplicationDbContextSeed()
+    {
+        httpClient = new();
+    }
 
     public static async Task SeedAsync(ApplicationDbContext context)
     {
@@ -30,6 +35,44 @@ public class ApplicationDbContextSeed
 
             await context.SaveChangesAsync();
         }
+
+        if (!await context.Users.AnyAsync())
+        {
+            await context.Users.AddRangeAsync(await GetUsersAsync());
+            
+            await context.SaveChangesAsync();
+        }
+    }
+
+    private static async Task<List<User>> GetUsersAsync()
+    {
+        var users = new List<User>();
+
+        for (int i = 0; i < 20; i++)
+        {
+            HttpClient httpClient = new HttpClient();
+            HttpResponseMessage responseMessage = await httpClient.GetAsync("https://randomuser.me/api/");
+            string responseBody = await responseMessage.Content.ReadAsStringAsync();
+
+            Console.WriteLine(responseBody);
+
+            dynamic data = JsonConvert.DeserializeObject<dynamic>(responseBody);
+            
+            if (data != null)
+            {
+                users.Add(new User()
+                {
+                    Name = data.results[0].name.first,
+                    ProfilePictureURL = data.results[0].picture.large,
+                    BirthDate = data.results[0].dob.date,
+                    Gender = data.results[0].gender,
+                });
+
+            }
+        }
+
+        return users;
+
     }
 
     private static List<Level> GetLevels()
@@ -185,4 +228,6 @@ public class ApplicationDbContextSeed
 
         return locations;
     }
+
+
 }
