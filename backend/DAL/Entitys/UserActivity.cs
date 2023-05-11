@@ -2,7 +2,7 @@ namespace DAL.Entities;
 
 public class UserActivity : BaseEntity
 {
-    public int UserId { get; set; }
-    public int ActivityId { get; set; }
-    public int LevelId { get; set; }
+    public Guid UserId { get; set; }
+    public Guid ActivityId { get; set; }
+    public Guid LevelId { get; set; }
 }
