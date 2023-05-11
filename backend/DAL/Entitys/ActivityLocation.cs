@@ -1,8 +1,7 @@
 namespace DAL.Entities;
 
-public class ActivityLocation : BaseEntity
+public class Location : BaseEntity
 {
-    public Guid ActivityId { get; set; }
-    public string ActivityPosition { get; set; }
-   public string LocationName { get; set; }
+    public double[]? Cords { get; set; }
+   public string LocationName { get; set; } = string.Empty;
 }
