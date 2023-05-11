@@ -4,6 +4,6 @@ public class Activity : BaseEntity
 {
     public string Name { get; set; } = String.Empty;
 
-    public virtual ICollection<UserActivity> UserActivities { get; set; }
+    public virtual ICollection<UserInterest> UserInterests { get; set; }
 }
 
