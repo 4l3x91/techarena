@@ -81,6 +81,6 @@ public class UserActivityController : ControllerBase
             );
         }
 
-        return Ok();
+        return Ok(userActivityCardDtos);
     }
 }
