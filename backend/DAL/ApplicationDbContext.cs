@@ -15,6 +15,7 @@ public class ApplicationDbContext : DbContext
     public DbSet<Event> Events { get; set; }
     public DbSet<UserEvent> UserEvents { get; set; }
     public DbSet<Request> Requests { get; set; }
+    public DbSet<Location> Locations { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
