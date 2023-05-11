@@ -1,0 +1,21 @@
+// Authenticate : POST : register
+POST https://localhost:7174/Authenticate/register
+content-type: application/json
+
+{
+  "username": "bannan",
+  "password": "password_A1"
+}
+
+###
+// Authenticate : POST : login
+POST https://localhost:7174/Authenticate/register/login
+content-type: application/json
+
+{
+  "username": "bannan",
+  "password": "password_A1"
+}
+
+###
+
