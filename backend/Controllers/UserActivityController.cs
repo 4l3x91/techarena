@@ -9,16 +9,15 @@ namespace backend.Controllers;
 [Route("[controller]")]
 public class UserActivityController : ControllerBase
 {
-    private readonly ILogger<WeatherForecastController> _logger;
     private readonly ApplicationDbContext _context;
 
-    public UserActivityController(ILogger<WeatherForecastController> logger, ApplicationDbContext context)
+    public UserActivityController(ApplicationDbContext context)
     {
-        _logger = logger;
         _context = context;
     }
 
     [HttpGet]
+    [Route("GetAllUserInterest")]
     public async Task<ActionResult<List<UserInterestCardDto>>> GetAllUserActivityCardsAsync(Guid userId)
     {
         var myUserInterests = await _context.UserInterests.Where(ua => ua.UserId == userId).ToListAsync();
@@ -50,12 +49,11 @@ public class UserActivityController : ControllerBase
             );
         }
 
-
-
         return Ok(userActivityCardDtos);
     }
 
     [HttpGet]
+    [Route("GetAllUserInterestByInterest")]
     public async Task<ActionResult<List<UserInterestCardDto>>> GetUserActivityCardDtosByActivity(Guid userId, Guid activityId)
     {
         var matchingUserInterests = new List<UserInterest>();
