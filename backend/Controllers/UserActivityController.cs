@@ -19,26 +19,27 @@ public class UserActivityController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<ActionResult<List<UserActivityCardDto>>> GetAllUserActivityCardsAsync(Guid userId)
+    public async Task<ActionResult<List<UserInterestCardDto>>> GetAllUserActivityCardsAsync(Guid userId)
     {
-        var myUserActivities = await _context.UserActivities.Where(ua => ua.UserId == userId).ToListAsync();
-        var matchingUserActivities = new List<UserActivity>();
-        var userActivityCardDtos = new List<UserActivityCardDto>();
+        var myUserInterests = await _context.UserInterests.Where(ua => ua.UserId == userId).ToListAsync();
+        var matchingUserInterests = new List<UserInterest>();
+        var userActivityCardDtos = new List<UserInterestCardDto>();
 
-        foreach (var userAcitivty in myUserActivities)
+        foreach (var userAcitivty in myUserInterests)
         {
-            matchingUserActivities.AddRange(await _context.UserActivities.Where(x => x.ActivityId == userAcitivty.ActivityId && userId != x.UserId).ToListAsync());
+            matchingUserInterests.AddRange(await _context.UserInterests.Where(x => x.ActivityId == userAcitivty.ActivityId && userId != x.UserId).ToListAsync());
         }
 
-        foreach (var match in matchingUserActivities)
+        foreach (var match in matchingUserInterests)
         {
             var user = await _context.Users.Where(x => x.Id == match.UserId).FirstOrDefaultAsync();
             var activity = await _context.Activities.Where(x => x.Id == match.ActivityId).FirstOrDefaultAsync();
             var level = await _context.Levels.Where(x => x.Id == match.LevelId).FirstOrDefaultAsync();
-            
+
 
             userActivityCardDtos.Add(
-                new UserActivityCardDto{
+                new UserInterestCardDto
+                {
                     Username = user.Name,
                     ActivityName = activity.Name,
                     ProfilePictureURL = user.ProfilePictureURL,
@@ -51,36 +52,37 @@ public class UserActivityController : ControllerBase
 
 
 
-       return Ok(userActivityCardDtos);
+        return Ok(userActivityCardDtos);
     }
 
     [HttpGet]
-    public async Task<ActionResult<List<UserActivityCardDto>>> GetUserActivityCardDtosByActivity(Guid userId, Guid activityId)
+    public async Task<ActionResult<List<UserInterestCardDto>>> GetUserActivityCardDtosByActivity(Guid userId, Guid activityId)
     {
-        var matchingUserActivities = new List<UserActivity>();
-        var userActivityCardDtos = new List<UserActivityCardDto>();
+        var matchingUserInterests = new List<UserInterest>();
+        var userInterestsCardDtos = new List<UserInterestCardDto>();
 
-        matchingUserActivities.AddRange(await _context.UserActivities.Where(x=> x.ActivityId == activityId && x.UserId == userId).ToListAsync());
+        matchingUserInterests.AddRange(await _context.UserInterests.Where(x => x.ActivityId == activityId && x.UserId == userId).ToListAsync());
 
-        foreach (var match in matchingUserActivities)
+        foreach (var match in matchingUserInterests)
         {
             var user = await _context.Users.Where(x => x.Id == match.UserId).FirstOrDefaultAsync();
             var activity = await _context.Activities.Where(x => x.Id == match.ActivityId).FirstOrDefaultAsync();
             var level = await _context.Levels.Where(x => x.Id == match.LevelId).FirstOrDefaultAsync();
-            
 
-            userActivityCardDtos.Add(
-                new UserActivityCardDto{
-                    Username = user.Name,
-                    ActivityName = activity.Name,
-                    ProfilePictureURL = user.ProfilePictureURL,
-                    Gender = user.Gender,
-                    Level = level.Name,
-                    Age = user.Age
-                }
-            );
+
+            userInterestsCardDtos.Add(
+            new UserInterestCardDto
+            {
+                Username = user.Name,
+                ActivityName = activity.Name,
+                ProfilePictureURL = user.ProfilePictureURL,
+                Gender = user.Gender,
+                Level = level.Name,
+                Age = user.Age
+            }
+        );
         }
 
-        return Ok(userActivityCardDtos);
+        return Ok(userInterestsCardDtos);
     }
 }
