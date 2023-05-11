@@ -95,16 +95,25 @@ public class ApplicationDbContextSeed
     private static List<Location> GetLocations()
     {
         var locations = new List<Location>();
-        string filePath = "../backend/location/badhus_simhallar.json";
+        string simhallarfilePath = "../backend/location/badhus_simhallar.json";
+        string badplatserfilePath = "../backend/location/badplatser.json";
+        string parkerfilePath = "../backend/location/parker.json";
+        string elljussparfilePath = "../backend/location/Elljusspår.json";
+        string skidsparfilePath = "../backend/location/skidspar.json";
 
-        // Read the JSON file into a string
-        string json = File.ReadAllText(filePath);
+        string simhallarJson = File.ReadAllText(simhallarfilePath);
+        string badplatserJson = File.ReadAllText(badplatserfilePath);
+        string parkerJson = File.ReadAllText(parkerfilePath);
+        string elljussparJson = File.ReadAllText(elljussparfilePath);
+        string skidsparJson = File.ReadAllText(skidsparfilePath);
 
-        // Deserialize the JSON string into an object
-        dynamic data = JsonConvert.DeserializeObject<dynamic>(json);
+        dynamic simhallarData = JsonConvert.DeserializeObject<dynamic>(simhallarJson);
+        dynamic badplatserData = JsonConvert.DeserializeObject<dynamic>(badplatserJson);
+        dynamic parkerData = JsonConvert.DeserializeObject<dynamic>(parkerJson);
+        dynamic elljussparData = JsonConvert.DeserializeObject<dynamic>(elljussparJson);
+        dynamic skidsparData = JsonConvert.DeserializeObject<dynamic>(skidsparJson);
 
-        // Loop through the features and map them to Location objects
-        foreach (var feature in data.features)
+        foreach (var feature in simhallarData.features)
         {
             if (feature.properties.name != null)
             {
@@ -115,10 +124,63 @@ public class ApplicationDbContextSeed
                     LocationName = feature.properties.name
                 };
             locations.Add(location);
-            }
+            }            
+        }
 
-            
-            // Do something with the location object
+        foreach (var feature in badplatserData.features)
+        {
+            if (feature.properties.name != null)
+            {
+                Location location = new Location
+                {
+                    Longitude = feature.geometry.coordinates[0],
+                    Latitude = feature.geometry.coordinates[1],
+                    LocationName = feature.properties.name
+                };
+            locations.Add(location);
+            }            
+        }
+
+        foreach (var feature in parkerData.features)
+        {
+            if (feature.properties.namn != null)
+            {
+                Location location = new Location
+                {
+                    Longitude = feature.geometry.coordinates[0],
+                    Latitude = feature.geometry.coordinates[1],
+                    LocationName = feature.properties.namn
+                };
+            locations.Add(location);
+            }            
+        }
+
+        foreach (var feature in elljussparData.features)
+        {
+            if (feature.properties.Titel != null)
+            {
+                Location location = new Location
+                {
+                    Longitude = feature.geometry.coordinates[0][0],
+                    Latitude = feature.geometry.coordinates[0][1],
+                    LocationName = feature.properties.Titel + "s elljusspår"
+                };
+            locations.Add(location);
+            }            
+        }
+
+        foreach (var feature in skidsparData.features)
+        {
+            if (feature.properties.namn != null)
+            {
+                Location location = new Location
+                {
+                    Longitude = feature.geometry.coordinates[0][0],
+                    Latitude = feature.geometry.coordinates[0][1],
+                    LocationName = feature.properties.namn
+                };
+            locations.Add(location);
+            }            
         }
 
         return locations;
