@@ -53,6 +53,21 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+using (var scope = app.Services.CreateScope())
+{
+    var scopedProvider = scope.ServiceProvider;
+    try
+    {
+        var cinemaContext = scopedProvider.GetRequiredService<ApplicationDbContext>();
+        await ApplicationDbContextSeed.SeedAsync(cinemaContext);
+
+    }
+    catch (Exception ex)
+    {
+        app.Logger.LogError(ex, "An error occurred seeding the DB.");
+    }
+}
+
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
