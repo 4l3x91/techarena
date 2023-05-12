@@ -7,7 +7,7 @@ interface User {
   password: string;
   gender: string;
   token: string;
-  profilePictureUrl: string;
+  profilePictureURL: string;
   birthdate: Date;
   age: number;
   about: string;
@@ -45,7 +45,7 @@ const UserProvider = ({ children }: Props) => {
     token: "",
     password: "",
     gender: "",
-    profilepictureurl: "",
+    profilePictureURL: "",
     birthdate: new Date(),
     age: 0,
     about: "",
