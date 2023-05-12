@@ -1,19 +1,15 @@
 import { useState } from "react";
 import { BsFillBarChartFill } from "react-icons/bs";
 import { VscLocation } from "react-icons/vsc";
-import { useQuery } from "react-query";
 import ActivityModal from "./ActivityModal";
 interface Props {
-  activity: any;
+  user: any;
   index: number;
 }
 
-const ActivityCard = ({ activity, index }: Props) => {
+const ActivityCard = ({ user, index }: Props) => {
   const [modal, setModal] = useState(false);
-  const { data: users } = useQuery(["user", index], () => {
-    return fetch("https://randomuser.me/api/").then((res) => res.json());
-  });
-  if (!users) return null;
+  if (!user) return null;
   return (
     <div onClick={() => setModal((prev) => !prev)}
       className="card bg-dark text-white p-0"
@@ -21,26 +17,25 @@ const ActivityCard = ({ activity, index }: Props) => {
       data-bs-target={`#exampleModal-${index}`} // Use userId here to make each modalId unique
     >
       <img
-        src={users.results[0].picture.large}
+        src={user.profilePictureURL}
         height="auto"
         className="card-img-top"
         alt="User profile picture"
       />
       <div className="card-body p-2">
         <p className="m-0 fs-7 fw-bold">
-          {users.results[0].name.first} {users.results[0].name.last},{" "}
-          {users.results[0].dob.age}
+          {user.username}
         </p>
         <div className="d-flex align-items-center gap-2">
           <BsFillBarChartFill />
-          <p className="m-0 fs-7">Novice</p>
+          <p className="m-0 fs-7">{user.level}</p>
         </div>
         <div className="d-flex align-items-center gap-2">
           <VscLocation />
-          <p className="m-0 fs-7">Anywhere</p>
+          <p className="m-0 fs-7">{user.location}</p>
         </div>
       </div>
-      <ActivityModal user={users.results[0]} modal={modal} index={index} />
+      <ActivityModal index={index} user={user} modal={modal} />
     </div>
   );
 };

@@ -29,22 +29,21 @@ const ActivityModal = ({ modal, user, index }: Props) => {
           </div>
           <div className="modal-body">
             <div className="d-flex align-items-center gap-2">
-              <img src={user.picture.large} className="rounded-circle" alt="" />
+              <img src={user.profilePictureURL} className="rounded-circle" alt="" />
               <div>
                 <div className="mb-2">
-                  {user.name.first} {user.name.last}, {user.dob.age} -{" "}
+                  {user.username}, {user.age} -{" "}
                   {user.gender}
                 </div>
                 <div className="fs-7">
-                  Jag är en glad tjej som söker en liten träningskompis,
-                  uppskattar dubbelskjortor!
+                  {user.about}
                 </div>
               </div>
             </div>
             <div className="mt-4 d-flex flex-column gap-2">
               <div className="">Details</div>
             <div className="d-flex gap-2 align-items-center">
-              <BsFillBarChartFill size={20} /> <p className="mb-0 fs-7">Novice</p>
+              <BsFillBarChartFill size={20} /> <p className="mb-0 fs-7">{user.level}</p>
             </div>
 
             <div className="d-flex gap-2 align-items-center">

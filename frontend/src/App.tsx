@@ -21,7 +21,7 @@ function App() {
       });
       if (response.status === 200) {
         const deserializedResponse = await response.json();
-        setCurrentUser(deserializedResponse);
+        setCurrentUser(deserializedResponse.user);
       }
     }
   };

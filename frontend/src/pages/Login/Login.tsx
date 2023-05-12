@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useUser } from "../../contexts/UserContext";
 
 const Login = () => {
-  const { setToken } = useUser();
+  const { setToken, setCurrentUser } = useUser();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -15,7 +15,10 @@ const Login = () => {
       },
       body: JSON.stringify({ username: username, password: password }),
     }).then((res) =>
-      res.json().then((data) => setToken(!data.token ? "" : data.token))
+      res.json().then((data) => {
+        console.log(data)
+        setCurrentUser(data.user)
+        setToken(!data.token ? "" : data.token)})
     );
   };
 
