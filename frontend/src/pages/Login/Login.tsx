@@ -1,39 +1,59 @@
-import { useQuery } from "react-query";
+import { useState } from "react";
 import { useUser } from "../../contexts/UserContext";
 
 const Login = () => {
   const { setToken } = useUser();
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
-  const { data: login } = useQuery(["user"], () => {
-    return fetch("http://localhost:5296/Authenticate/login", {
+  const handleSubmit = async (event: React.ChangeEvent<EventTarget>) => {
+    event.preventDefault();
+    await fetch("http://localhost:5296/Authenticate/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ username: "test", password: "Asd123!" }),
-    }).then((res) => res.json().then((data) => setToken(!data.token ? "" : data.token)));
-  });
+      body: JSON.stringify({ username: username, password: password }),
+    }).then((res) =>
+      res.json().then((data) => setToken(!data.token ? "" : data.token))
+    );
+  };
 
   return (
     <div className="container container-fluid h-100 d-flex flex-column">
-      <form className="d-flex justify-content-center flex-column flex-fill">
-        <img src="https://avatars.githubusercontent.com/u/90207950?v=4" className="w-50 mx-auto mb-4" alt="" />
+      <form
+        className="d-flex justify-content-center flex-column flex-fill"
+      >
+        <img
+          src="https://avatars.githubusercontent.com/u/90207950?v=4"
+          className="w-50 mx-auto mb-4"
+          alt=""
+        />
         <div className="mb-3">
-          <label className="form-label">Email address</label>
-          <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+          <label className="form-label">Username</label>
+          <input
+            type="email"
+            className="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
           <div id="emailHelp" className="form-text">
-            We'll never share your email with anyone else.
+            We'll never share your credentials with anyone else.
           </div>
         </div>
         <div className="mb-3">
           <label className="form-label">Password</label>
-          <input type="password" className="form-control" id="exampleInputPassword1" />
+          <input
+            type="password"
+            className="form-control"
+            id="exampleInputPassword1"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
         </div>
-        <div className="mb-3 form-check">
-          <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-          <label className="form-check-label">Check me out</label>
-        </div>
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn btn-primary" onClick={handleSubmit}>
           Log in
         </button>
       </form>
