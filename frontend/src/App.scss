@@ -1,0 +1,25 @@
+@import 'bootstrap/dist/css/bootstrap.css';
+@import "overrides.scss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {
+    background-color: #171717;
+    color: white;
+}
+body, html {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+main {
+    flex: 1;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.fs-7 {
+    font-size: 12px;
+}

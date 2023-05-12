@@ -79,6 +79,19 @@ namespace API.Controllers.V01
             return Ok(new AuthResponseDto { Status = "Success", Message = "User created successfully!" });
         }
 
+        [HttpGet]
+        [Route("isAuthenticated")]
+        public async Task<IActionResult> IsAuthenticated()
+        {
+            var user = await _userManager.FindByNameAsync(User.Identity?.Name);
+
+            return Ok(new
+            {
+                id = user.Id,
+                username = User.Identity?.Name
+            });
+        }
+
         private JwtSecurityToken GetToken(List<Claim> authClaims)
         {
             var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:Secret"]));

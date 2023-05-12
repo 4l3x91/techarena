@@ -1,35 +1,52 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
+import "./App.scss";
+import Layout from "./Layout";
+import { useUser } from "./contexts/UserContext";
+import Activities from "./pages/Activities/Activities";
+import Activity from "./pages/Activity/Activity";
+import Event from "./pages/Event/Event";
+import Events from "./pages/Events/Events";
+import Login from "./pages/Login/Login";
+import Profile from "./pages/Profile/Profile";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const { currentUser, token, setCurrentUser } = useUser();
+
+  const getAuth = async (token: string) => {
+    if (token) {
+      const response = await fetch("http://localhost:5296/authenticate/isAuthenticated", {
+        method: "GET",
+        headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+      });
+      if (response.status === 200) {
+        const deserializedResponse = await response.json();
+        setCurrentUser(deserializedResponse);
+      }
+    }
+  };
+
+  useEffect(() => {
+    if (token != "") {
+      getAuth(token);
+    }
+  }, [token]);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Routes>
+      {currentUser?.token !== "" ? (
+        <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Activities />} />
+          <Route path="activities/:id" element={<Activity />} />
+          <Route path="events/" element={<Events />} />
+          <Route path="events/:id" element={<Event />} />
+          <Route path="profile" element={<Profile />} />
+        </Route>
+      ) : (
+        <Route index element={<Login />} />
+      )}
+    </Routes>
+  );
 }
 
-export default App
+export default App;

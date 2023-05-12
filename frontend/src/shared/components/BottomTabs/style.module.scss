@@ -1,0 +1,18 @@
+.nav_item {
+    padding-inline: .5rem;
+    flex: 1;
+    text-align: center;
+}
+
+.navlink {
+    color: white;
+    text-decoration: none;
+    opacity: .5;
+    
+}
+
+.nav {
+    @supports (-webkit-touch-callout: none) {
+        padding-bottom: calc(env(safe-area-inset-bottom)) !important;
+      }
+}
