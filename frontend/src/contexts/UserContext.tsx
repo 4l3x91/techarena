@@ -35,7 +35,7 @@ interface Props {
 
 const UserProvider = ({ children }: Props) => {
   // const [currentUser, setCurrentUser] = useLocalStorage<User | undefined>("user", undefined);
-  const [currentUser, setCurrentUser] = useState<User>({ username: "", token: "", password: "password" } as User);
+  const [currentUser, setCurrentUser] = useState<User>({ username: "", token: "", password: "" } as User);
   const [token, setToken] = useLocalStorage<string>("token", "");
 
   const loginUser = (user: User) => {
@@ -43,14 +43,6 @@ const UserProvider = ({ children }: Props) => {
       setCurrentUser(user);
     }
   };
-
-  // useEffect(() => {
-  //   if (!token) {
-  //     localStorage.setItem("user", JSON.stringify({}));
-  //   } else {
-  //       // setCurrentUser(localStorage.getItem("user"));
-  //   }
-  // }, [token]);
 
   return <UserContext.Provider value={{ currentUser, loginUser, token, setToken, setCurrentUser }}>{children}</UserContext.Provider>;
 };

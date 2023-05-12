@@ -82,7 +82,6 @@ namespace API.Controllers.V01
         [Route("isAuthenticated")]
         public async Task<IActionResult> IsAuthenticated()
         {
-            System.Console.WriteLine("HEJ");
             var user = await _userManager.FindByNameAsync(User.Identity?.Name);
 
             return Ok(new
