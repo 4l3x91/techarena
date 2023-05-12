@@ -18,15 +18,15 @@ public class UserActivityController : ControllerBase
 
     [HttpGet]
     [Route("GetAllUserInterest")]
-    public async Task<ActionResult<List<UserInterestCardDto>>> GetAllUserActivityCardsAsync(Guid userId)
+    public async Task<ActionResult<List<UserInterestCardDto>>> GetAllUserInterestAsync(Guid userId)
     {
         var myUserInterests = await _context.UserInterests.Where(ua => ua.UserId == userId).ToListAsync();
         var matchingUserInterests = new List<UserInterest>();
         var userActivityCardDtos = new List<UserInterestCardDto>();
 
-        foreach (var userAcitivty in myUserInterests)
+        foreach (var userInterest in myUserInterests)
         {
-            matchingUserInterests.AddRange(await _context.UserInterests.Where(x => x.InterestId == userAcitivty.InterestId && userId != x.UserId).ToListAsync());
+            matchingUserInterests.AddRange(await _context.UserInterests.Where(x => x.InterestId == userInterest.InterestId && userId != x.UserId).ToListAsync());
         }
 
         foreach (var match in matchingUserInterests)
@@ -44,7 +44,8 @@ public class UserActivityController : ControllerBase
                     ProfilePictureURL = user.ProfilePictureURL,
                     Gender = user.Gender,
                     Level = level.Name,
-                    Age = user.Age
+                    Age = user.Age,
+                    About = user.About
                 }
             );
         }
@@ -53,13 +54,13 @@ public class UserActivityController : ControllerBase
     }
 
     [HttpGet]
-    [Route("GetAllUserInterestByInterest")]
-    public async Task<ActionResult<List<UserInterestCardDto>>> GetUserActivityCardDtosByActivity(Guid userId, Guid activityId)
+    [Route("GetAllUserInterestByInterestId")]
+    public async Task<ActionResult<List<UserInterestCardDto>>> GetUserInterestCardDtosByActivity( Guid interestId)
     {
         var matchingUserInterests = new List<UserInterest>();
         var userInterestsCardDtos = new List<UserInterestCardDto>();
 
-        matchingUserInterests.AddRange(await _context.UserInterests.Where(x => x.InterestId == activityId && x.UserId == userId).ToListAsync());
+        matchingUserInterests.AddRange(await _context.UserInterests.Where(x => x.InterestId == interestId).ToListAsync());
 
         foreach (var match in matchingUserInterests)
         {
