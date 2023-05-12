@@ -1,21 +1,26 @@
-import { createContext, ReactNode, useContext, useState } from "react";
+import { createContext, ReactNode, useContext, useEffect, useState } from "react";
 import { useLocalStorage } from "../hooks/useLocalStorage";
 
 interface User {
   id: number;
-  username: string;
+  name: string;
   password: string;
   gender: string;
   token: string;
+  profilepictureurl: string;
+  birthdate: Date;
+  age: number;
+  about: string;
+  authUserId: string;
 }
-export interface SignInDto extends Pick<User, "username" | "password"> {
-  username: string;
+export interface SignInDto extends Pick<User, "name" | "password"> {
+  name: string;
   password: string;
 }
 
 interface UserContext {
   currentUser: User | undefined;
-  loginUser: (user: User) => void;
+  // loginUser: (user: User) => void;
   token: string;
   setToken: (token: string) => void;
   setCurrentUser: React.Dispatch<React.SetStateAction<User>>;
@@ -23,7 +28,7 @@ interface UserContext {
 
 const UserContext = createContext<UserContext>({
   currentUser: {} as User,
-  loginUser: () => console.warn("No provider found."),
+  // loginUser: () => console.warn("No provider found."),
   token: "",
   setToken: () => console.warn("No provider found."),
   setCurrentUser: () => console.log("no provider found"),
@@ -35,16 +40,22 @@ interface Props {
 
 const UserProvider = ({ children }: Props) => {
   // const [currentUser, setCurrentUser] = useLocalStorage<User | undefined>("user", undefined);
-  const [currentUser, setCurrentUser] = useState<User>({ username: "", token: "", password: "" } as User);
+  const [currentUser, setCurrentUser] = useState<User>({ name: "", token: "", password: "", 
+  gender: "", profilepictureurl: "", birthdate: new Date(), age: 0, about: "", authUserId: ""
+} as User);
   const [token, setToken] = useLocalStorage<string>("token", "");
 
-  const loginUser = (user: User) => {
-    if (user) {
-      setCurrentUser(user);
-    }
-  };
+  // const loginUser = (user: User) => {
+  //   if (user) {
+  //     setCurrentUser(user);
+  //   }
+  // };
 
-  return <UserContext.Provider value={{ currentUser, loginUser, token, setToken, setCurrentUser }}>{children}</UserContext.Provider>;
+  useEffect(() => {
+    console.log(currentUser)
+  }, [currentUser]);
+
+  return <UserContext.Provider value={{ currentUser, token, setToken, setCurrentUser }}>{children}</UserContext.Provider>;
 };
 
 export const useUser = () => useContext(UserContext);

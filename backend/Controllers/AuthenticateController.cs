@@ -5,6 +5,7 @@ using System.Security.Claims;
 using System.Text;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers.V01
 {
@@ -15,15 +16,17 @@ namespace API.Controllers.V01
         private readonly UserManager<IdentityUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IConfiguration _configuration;
+        private readonly ApplicationDbContext _context;
 
         public AuthenticateController(
             UserManager<IdentityUser> userManager,
             RoleManager<IdentityRole> roleManager,
-            IConfiguration configuration)
+            IConfiguration configuration, ApplicationDbContext context)
         {
             _userManager = userManager;  //För authUser
             _roleManager = roleManager;
             _configuration = configuration;
+            _context = context;
         }
 
         [HttpPost] //Return Token
@@ -53,6 +56,7 @@ namespace API.Controllers.V01
                     token = new JwtSecurityTokenHandler().WriteToken(token),
                     expiration = token.ValidTo,
                     authUserId = user.Id,
+                    user = await _context.Users.FirstOrDefaultAsync(x => x.AuthUserId.ToString() == user.Id),
                 });
             }
             return Unauthorized();
@@ -87,8 +91,7 @@ namespace API.Controllers.V01
 
             return Ok(new
             {
-                id = user.Id,
-                username = User.Identity?.Name
+                user = _context.Users.FirstOrDefault(x => x.AuthUserId.ToString() == user.Id),
             });
         }
 
