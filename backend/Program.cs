@@ -14,7 +14,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlite
 builder.Services.AddDbContext<IdentityDbContext>(options => options.UseSqlite(configuration.GetConnectionString("AppIdentityConnection")));
 
 
-//För identity
+//Fï¿½r identity
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()
     .AddEntityFrameworkStores<IdentityDbContext>()
     .AddDefaultTokenProviders();

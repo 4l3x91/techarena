@@ -1,4 +1,7 @@
+using System.Text;
+using API.Identity.Models;
 using DAL.Entities;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 
@@ -42,30 +45,64 @@ public class ApplicationDbContextSeed
             
             await context.SaveChangesAsync();
         }
+
+        if (!await context.UserInterests.AnyAsync())
+        {
+            await context.UserInterests.AddRangeAsync(await GetUserInterestsAsync(context));
+            await context.SaveChangesAsync();
+        }
+    }
+
+    private static async Task<List<UserInterest>> GetUserInterestsAsync(ApplicationDbContext context)
+    {
+        var random = new Random();
+        var userInterests = new List<UserInterest>();
+
+        foreach (var user in context.Users)
+        {
+            for (int i = 0; i < random.Next(1, 4); i++)
+            {
+                var Interesets = await context.Interests.ToListAsync();
+                var Levels = await context.Levels.ToListAsync();
+                var Locations = await context.Locations.ToListAsync();
+
+                userInterests.Add(new UserInterest()
+                {
+                    UserId = user.Id,
+                    InterestId = Interesets[random.Next(0, Interesets.Count())].Id,
+                    LevelId = Levels[random.Next(0, Levels.Count())].Id,
+                    LocationId = random.Next(1, 4) != 3 ? Locations[random.Next(0, Locations.Count())].Id : null
+                });
+            }
+        }
+
+        return userInterests;
     }
 
     private static async Task<List<User>> GetUsersAsync()
     {
+        HttpClient httpClient = new HttpClient();
+
+        
         var users = new List<User>();
 
-        for (int i = 0; i < 20; i++)
+        for (int i = 0; i < 50; i++)
         {
-            HttpClient httpClient = new HttpClient();
             HttpResponseMessage responseMessage = await httpClient.GetAsync("https://randomuser.me/api/");
             string responseBody = await responseMessage.Content.ReadAsStringAsync();
 
-            Console.WriteLine(responseBody);
-
             dynamic data = JsonConvert.DeserializeObject<dynamic>(responseBody);
-            
+
             if (data != null)
             {
+                Console.WriteLine(data.results[0].dob.date);
                 users.Add(new User()
                 {
                     Name = data.results[0].name.first,
                     ProfilePictureURL = data.results[0].picture.large,
                     BirthDate = data.results[0].dob.date,
                     Gender = data.results[0].gender,
+                    AuthUserId = Guid.NewGuid()
                 });
 
             }
