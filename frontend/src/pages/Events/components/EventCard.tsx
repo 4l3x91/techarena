@@ -23,7 +23,7 @@ const EventCard = ({event, index}: Props) => {
           <h5 className="mb-0 me-auto">{event.title}</h5>
           <div className="d-flex gap-1">
           {Array.from({ length: randomNumber }).map((activity, idx) => (
-            <img src={users.results[0].picture.thumbnail} className="rounded-circle" height="28" />
+            <img src={users.results[0].picture.thumbnail} key={idx} className="rounded-circle" height="28" />
             ))}
           </div>
             </div>
