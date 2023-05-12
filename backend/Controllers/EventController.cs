@@ -48,5 +48,22 @@ public class EventController : ControllerBase
 
         return Ok(events);
     }
+    [HttpPost]
+    [Route("CreateNewEvent/{userId:Guid}")]
+    public async Task<ActionResult> CreateNewEvent(Guid userId, [FromBody] Event Event)
+    {
+        var user = await _context.Users.Where(u => u.Id == userId).FirstOrDefaultAsync();
+        
+        var newEvent = new Event
+        {
+            Id = Guid.NewGuid(),
+            UserInterestId = Event.UserInterestId,
+            Time = Event.Time,
+            IsPublic = Event.IsPublic
+        };
+        await _context.Events.AddAsync(newEvent);
+        await _context.SaveChangesAsync();
+        return Ok();
+    }
 
 }
