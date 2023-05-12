@@ -21,6 +21,7 @@ const Activity = () => {
   });
 
   const currentActivity = interests?.find((x) => x.id === id.id);
+  console.log(currentUser)
 
   if (!usersWithInterests || !interests) return null;
   return (
@@ -31,7 +32,7 @@ const Activity = () => {
       </div>
       <div className={styles.grid}>
         {usersWithInterests
-          .filter((x) => x.profilePictureURL !== currentUser.currentUser?.profilepictureurl)
+          .filter((x) => x.profilePictureURL !== currentUser.currentUser?.profilePictureURL)
           .map((user: any, index: number) => (
             <ActivityCard key={index} index={index} user={user} />
           ))}
