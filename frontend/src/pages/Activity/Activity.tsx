@@ -16,26 +16,28 @@ const Activity = () => {
     return await fetch(`http://localhost:5296/UserActivity/GetAllUserInterestByInterestId?interestId=${id.id}`).then((res) => res.json());
   });
 
-  const {data : interests} = useQuery(["interests"], async () => {
-    return await fetch('http://localhost:5296/Interest/GetAllInterests').then((res) => res.json());
+  const { data: interests } = useQuery(["interests"], async () => {
+    return await fetch("http://localhost:5296/Interest/GetAllInterests").then((res) => res.json());
   });
 
-  const currentActivity = interests.find(x => x.id === id.id);
+  const currentActivity = interests?.find((x) => x.id === id.id);
 
-  if(!usersWithInterests || !interests) return null;
+  if (!usersWithInterests || !interests) return null;
   return (
     <div className="container container-fluid my-2">
       <div className="align-items-center d-flex gap-2 mb-2">
-      <BsChevronLeft size={24} onClick={() => navigate("/")} />
-    <h2 className="mb-0">{currentActivity.name}</h2>
+        <BsChevronLeft size={24} onClick={() => navigate("/")} />
+        <h2 className="mb-0">{currentActivity.name}</h2>
       </div>
-    <div className={styles.grid}>
-    {usersWithInterests.filter(x => x.profilePictureURL !== currentUser.currentUser?.profilepictureurl).map((user: any, index: number) => (
-      <ActivityCard key={index} index={index} user={user} />
-    ))}
+      <div className={styles.grid}>
+        {usersWithInterests
+          .filter((x) => x.profilePictureURL !== currentUser.currentUser?.profilepictureurl)
+          .map((user: any, index: number) => (
+            <ActivityCard key={index} index={index} user={user} />
+          ))}
+      </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default Activity
+export default Activity;

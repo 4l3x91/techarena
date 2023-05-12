@@ -7,7 +7,7 @@ interface User {
   password: string;
   gender: string;
   token: string;
-  profilepictureurl: string;
+  profilePictureUrl: string;
   birthdate: Date;
   age: number;
   about: string;
@@ -40,9 +40,17 @@ interface Props {
 
 const UserProvider = ({ children }: Props) => {
   // const [currentUser, setCurrentUser] = useLocalStorage<User | undefined>("user", undefined);
-  const [currentUser, setCurrentUser] = useState<User>({ name: "", token: "", password: "", 
-  gender: "", profilepictureurl: "", birthdate: new Date(), age: 0, about: "", authUserId: ""
-} as User);
+  const [currentUser, setCurrentUser] = useState<User>({
+    name: "",
+    token: "",
+    password: "",
+    gender: "",
+    profilepictureurl: "",
+    birthdate: new Date(),
+    age: 0,
+    about: "",
+    authUserId: "",
+  } as User);
   const [token, setToken] = useLocalStorage<string>("token", "");
 
   // const loginUser = (user: User) => {
@@ -52,7 +60,7 @@ const UserProvider = ({ children }: Props) => {
   // };
 
   useEffect(() => {
-    console.log(currentUser)
+    console.log(currentUser);
   }, [currentUser]);
 
   return <UserContext.Provider value={{ currentUser, token, setToken, setCurrentUser }}>{children}</UserContext.Provider>;
