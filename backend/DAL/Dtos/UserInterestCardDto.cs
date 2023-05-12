@@ -11,4 +11,5 @@ public class UserInterestCardDto
     public string Gender { get; set; }
     public int Age { get; set; }
     public string About { get; set; }
+    public Location Location { get; set; }
 }
