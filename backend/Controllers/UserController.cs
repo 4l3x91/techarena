@@ -38,8 +38,9 @@ public class UserController : ControllerBase
     [HttpGet]
     [Route("GetUserByAuthId/{authId:Guid}")]
     public async Task<ActionResult<User>> GetUserByAuthId(Guid authId)
-    {
-        var user = await _context.Users.Where(u => u.AuthUserId == authId).FirstOrDefaultAsync();
+    {        
+        var user = await _context.Users.FirstOrDefaultAsync(u => u.AuthUserId.ToString() == authId.ToString());
+
         return Ok(user);
     }
 
