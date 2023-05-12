@@ -43,6 +43,14 @@ public class UserController : ControllerBase
         return Ok(user);
     }
 
+    [HttpGet]
+    [Route("GetAllUsers")]
+    public async Task<ActionResult<List<User>>> GetAllUsers()
+    {
+        var users = await _context.Users.ToListAsync();
+        return Ok(users);
+    }
+
     [HttpPut]
     [Route("UpdateUser")]
     public async Task<ActionResult> CompleteUserProfile(UserRequestDto dto)
