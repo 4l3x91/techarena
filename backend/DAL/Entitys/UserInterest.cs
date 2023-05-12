@@ -6,5 +6,5 @@ public class UserInterest : BaseEntity
     public Guid InterestId { get; set; }
     public Guid LevelId { get; set; }
     public string? Note { get; set; }
-    public Location? Location { get; set; }
+    public Guid? LocationId { get; set; }
 }
