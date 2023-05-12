@@ -44,6 +44,10 @@ namespace backend.Migrations.ApplicationDb
                         .ValueGeneratedOnAdd()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -117,6 +121,9 @@ namespace backend.Migrations.ApplicationDb
                         .HasColumnType("TEXT");
 
                     b.Property<Guid>("AuthUserId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("BirthDate")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Gender")
@@ -231,7 +238,7 @@ namespace backend.Migrations.ApplicationDb
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("DAL.Entities.Location", "Location")
+                    b.HasOne("DAL.Entities.Location", null)
                         .WithMany("UserInterests")
                         .HasForeignKey("LocationId");
 
@@ -240,8 +247,6 @@ namespace backend.Migrations.ApplicationDb
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Location");
                 });
 
             modelBuilder.Entity("DAL.Entities.Event", b =>
