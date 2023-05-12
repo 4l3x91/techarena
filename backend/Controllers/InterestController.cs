@@ -47,7 +47,7 @@ public class InterestController : ControllerBase
             InterestId = interestId,
             LevelId = UserInterest.LevelId,
             Note = UserInterest.Note,
-            Location = UserInterest.Location
+            LocationId = UserInterest.LocationId
         };
         await _context.UserInterests.AddAsync(newUserInterest);
         await _context.SaveChangesAsync();
