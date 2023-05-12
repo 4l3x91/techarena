@@ -26,7 +26,7 @@ const ActivityCard = ({ user, index }: Props) => {
         </div>
         <div className="d-flex align-items-center gap-2">
           <VscLocation />
-          <p className="m-0 fs-7">{user.location ? user.location : "Anywhere"}</p>
+          <p className="m-0 fs-7">{user.location ? user.location.locationName : "Anywhere"}</p>
         </div>
       </div>
       <ActivityModal index={index} user={user} modal={modal} />
