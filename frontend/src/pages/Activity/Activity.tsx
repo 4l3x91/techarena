@@ -31,7 +31,7 @@ const Activity = () => {
       </div>
     <div className={styles.grid}>
     {usersWithInterests.filter(x => x.profilePictureURL !== currentUser.currentUser?.profilepictureurl).map((user: any, index: number) => (
-      <ActivityCard key={user.id} index={index} user={user} />
+      <ActivityCard key={index} index={index} user={user} />
     ))}
     </div>
     </div>
