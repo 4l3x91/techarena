@@ -34,7 +34,7 @@ public class UserActivityController : ControllerBase
             var user = await _context.Users.Where(x => x.Id == match.UserId).FirstOrDefaultAsync();
             var interest = await _context.Interests.Where(x => x.Id == match.InterestId).FirstOrDefaultAsync();
             var level = await _context.Levels.Where(x => x.Id == match.LevelId).FirstOrDefaultAsync();
-            var location = match.LocationId != null ? await _context.Locations.Where(x => x.Id == match.LocationId).FirstOrDefaultAsync() : null;
+            
 
 
             userActivityCardDtos.Add(
@@ -47,7 +47,7 @@ public class UserActivityController : ControllerBase
                     Level = level.Name,
                     Age = user.Age,
                     About = user.About,
-                    Location = location
+
                 }
             );
         }
@@ -69,7 +69,7 @@ public class UserActivityController : ControllerBase
             var user = await _context.Users.Where(x => x.Id == match.UserId).FirstOrDefaultAsync();
             var interest = await _context.Interests.Where(x => x.Id == match.InterestId).FirstOrDefaultAsync();
             var level = await _context.Levels.Where(x => x.Id == match.LevelId).FirstOrDefaultAsync();
-
+            var location = match.LocationId != null ? await _context.Locations.Where(x => x.Id == match.LocationId).FirstOrDefaultAsync() : null;
 
             userInterestsCardDtos.Add(
             new UserInterestCardDto
@@ -79,7 +79,8 @@ public class UserActivityController : ControllerBase
                 ProfilePictureURL = user.ProfilePictureURL,
                 Gender = user.Gender,
                 Level = level.Name,
-                Age = user.Age
+                Age = user.Age,
+                Location = location
             }
         );
         }
